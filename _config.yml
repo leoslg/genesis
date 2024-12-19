@@ -1,12 +1,15 @@
 # Site settings
-title:
-email:
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+title: Genesis AI Solutions
+email: contato@genesisaisolutions.com
+description: "Soluções automatizadas e inteligentes para otimização, escalabilidade e sucesso do seu negócio."
+baseurl: "" # Root
+url: "https://leoslg.github.io/genesis"
 
-twitter_username:
-github_username:
+# Redes sociais
+instagram: https://www.instagram.com/genesissolutions.ai/
+facebook: https://www.facebook.com/genesisaisolutions
+linkedin: https://www.linkedin.com/company/solutionsgenesis/
+whatsapp: https://api.whatsapp.com/send?phone=5566992453447
 
 # Build settings
 markdown: kramdown

@@ -1,3 +1,11 @@
+// Substitua as cores antigas pelas novas
+$theme-primary: #59c7fa;   // Verde claro (cor principal)
+$theme-dark: #0b1a26;      // Fundo escuro
+$theme-border: #0a1a73;    // Borda
+$theme-text: #F5F5F5;      // Texto principal
+$theme-text-secondary: #132640; // Texto secundário
+$theme-secondary: #45bf70; // Azul claro (cor secundária)
+
 html,
 body {
     height: 100%;
@@ -5,7 +13,8 @@ body {
 }
 
 body {
-    @include serif-font;
+    @include sans-serif-font;
+    background-color: $theme-dark;
 }
 
 hr {
@@ -15,7 +24,7 @@ hr {
 }
 
 hr.light {
-    border-color: white;
+    border-color: $theme-text;
 }
 
 a {
@@ -47,7 +56,7 @@ p {
 }
 
 .bg-dark {
-    background-color: $theme-dark;
+    background-color: $theme-primary;
     color: white;
 }
 
@@ -70,7 +79,7 @@ aside {
 // Navigation
 
 .navbar-default {
-    background-color: white;
+    background-color: $theme-dark;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
@@ -110,9 +119,9 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba($theme-dark, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba($theme-text, .7);
             &:hover,
             &:focus {
                 color: white;
@@ -120,13 +129,13 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba($theme-text, .7);
             &:hover {
                 color: white;
             }
         }
         &.affix {
-            background-color: white;
+            background-color: $theme-dark;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
@@ -155,7 +164,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/genesis/wppgenai_retro_nbkg.png');
     text-align: center;
     color: white;
     .header-content {
@@ -316,9 +325,27 @@ header {
 }
 
 // Contact
+// Estilos para a seção de contato
 #contact .fa {
-    color: $theme-dark;
-    font-size: 4em;
+    margin-bottom: 10px;
+    display: inline-block;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+}
+
+#contact a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+#contact a p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f5f5f5; // Cor do texto ajustada
 }
 
 // Extras
