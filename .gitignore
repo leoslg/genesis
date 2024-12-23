@@ -1,2 +1,21 @@
+# Diretório de saída gerado pelo Jekyll
 _site/
+
+# Cache do Sass
 .sass-cache/
+
+# Cache do Jekyll
+.jekyll-cache/
+.jekyll-metadata
+
+# Configurações locais do Bundler
+.bundle/
+
+# Dependências instaladas pelo Bundler
+vendor/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+tmp/

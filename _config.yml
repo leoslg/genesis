@@ -5,11 +5,45 @@ description: "Soluções automatizadas e inteligentes para otimização, escalab
 baseurl: "" # Root
 url: "https://leoslg.github.io/genesis"
 
+# Informações de autor
+author:
+  name: "Genesis AI Solutions"
+  email: "aigenesissolutions@gmail.com"
+
 # Redes sociais
 instagram: https://www.instagram.com/genesissolutions.ai/
 facebook: https://www.facebook.com/genesisaisolutions
 linkedin: https://www.linkedin.com/company/solutionsgenesis/
 whatsapp: https://api.whatsapp.com/send?phone=5566992453447
+twitter: https://x.com/GenesisAi56981
+
+seo:
+  title: "Genesis AI Solutions - Soluções e Automações Inteligentes"
+  description: "Automatize e otimize atendimentos, vendas e processos com IA Avançada"
+  url: "https://leoslg.github.io/genesis"
+  social:
+    name: "Genesis AI Solutions"
+    image: "/assets/img/genesis/logo_dkbg.png"
+    instagram: "https://www.instagram.com/genesissolutions.ai/"
+    facebook: "https://www.facebook.com/genesisaisolutions/"
+    linkedin: "https://www.linkedin.com/company/solutionsgenesis/"
+    twitter:
+      card: "summary_large_image" # Tipo do card: "summary" ou "summary_large_image"
+      site: "@GenesisAi56981"  # Usuário oficial do Twitter (com "@")
+      creator: "@GenesisAi56981" # Usuário do autor ou responsável pelo site
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap # Para gerar automaticamente o sitemap.xml (recomendado para SEO)
+  - jekyll-feed    # Para gerar o feed RSS
 
 # Build settings
 markdown: kramdown
+
+# Geração do sitemap.xml (ajuda no ranqueamento do Google)
+sitemap:
+  filename: sitemap.xml
+  exclude: ["404.html"] # Exclua páginas específicas se necessário
+  changefreq: "monthly" # Frequência de atualização sugerida
+  priority: 0.8 # Prioridade relativa do site

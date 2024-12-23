@@ -43,12 +43,14 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    color: $theme-text
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
+    color: $theme-text;
 }
 
 .bg-primary {
@@ -164,7 +166,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/genesis/wppgenai_retro_nbkg.png');
+    background-image: url('../assets/img/genesis/wppgenai_retro_nbkg.png');
     text-align: center;
     color: white;
     .header-content {
@@ -329,7 +331,7 @@ header {
 #contact .fa {
     margin-bottom: 10px;
     display: inline-block;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-delay: 0.4s;
 }
 

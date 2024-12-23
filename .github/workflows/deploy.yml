@@ -1,0 +1,42 @@
+name: Deploy Genesis Site
+
+on:
+  push:
+    branches:
+      - www # Substitua pela branch principal do desenvolvimento
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout do código do repositório
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Configurar o Ruby
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2 # Ajuste para a versão usada no projeto
+          bundler-cache: true
+
+      # Instalar dependências
+      - name: Install dependencies
+        run: bundle install
+
+      # Validar a configuração do Jekyll
+      - name: Validate Jekyll build
+        run: bundle exec jekyll doctor
+
+      # Construir o site
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      # Deploy para o GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: page
