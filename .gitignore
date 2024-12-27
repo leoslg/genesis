@@ -19,3 +19,6 @@ vendor/
 
 # Arquivos temporários
 tmp/
+
+# Development _config
+_config_dev.yml

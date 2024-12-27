@@ -8,10 +8,23 @@
 
     <title>Genesis AI Solutions - Automatize seu negócio - Agentes inteligentes em atendimento, vendas, suporte e CRM -</title>
 
-    {% seo %}
+    {% if site.enviroment == "production" %}
+        {% seo %}
+    {% else %}
+
+    <!-- Favicon-->
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <!-- Para navegadores modernos -->
+    <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
+    <!-- Icones para dispositivos -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -41,5 +54,5 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    {% endif %}
 </head>
