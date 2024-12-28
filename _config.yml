@@ -50,7 +50,6 @@ sitemap:
 
 # Includes e Assets
 includes:
-  - assets
   - assets/img/covers
   - assets/img/portfolio
 
