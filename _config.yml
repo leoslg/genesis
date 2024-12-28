@@ -2,7 +2,7 @@
 title: Genesis AI Solutions
 email: contato@genesisaisolutions.com
 description: "Soluções automatizadas e inteligentes para otimização, escalabilidade e sucesso do seu negócio."
-baseurl: "" # Root
+baseurl: "/genesis" # Root
 url: "https://leoslg.github.io/genesis"
 
 # Informações de autor
@@ -23,7 +23,7 @@ seo:
   url: "https://leoslg.github.io/genesis"
   social:
     name: "Genesis AI Solutions"
-    image: "/assets/img/covers/logo_dkbg.png"
+    image: "{{ site.baseurl }}/assets/img/covers/logo_dkbg.png"
     instagram: "https://www.instagram.com/genesissolutions.ai/"
     facebook: "https://www.facebook.com/genesisaisolutions/"
     linkedin: "https://www.linkedin.com/company/solutionsgenesis/"
