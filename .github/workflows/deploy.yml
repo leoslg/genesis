@@ -16,7 +16,7 @@ permissions:
 
 # Ensure only one deployment runs at a time
 concurrency:
-  group: "pages"
+  group: "page"
   cancel-in-progress: false
 
 jobs:
