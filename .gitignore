@@ -22,3 +22,6 @@ tmp/
 
 # Development _config
 _config_dev.yml
+
+# Gemfile.lock
+Gemfile.lock
